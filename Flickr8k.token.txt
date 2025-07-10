@@ -1,0 +1,50 @@
+img1.jpg#0	A child is playing in the park.
+img1.jpg#1	A little boy is running with joy.
+img1.jpg#2	A happy child outdoors on a sunny day.
+img1.jpg#3	A kid is enjoying playtime in nature.
+img1.jpg#4	A boy is laughing and playing in green fields.
+img2.jpg#0	A group of people are hiking in the mountains.
+img2.jpg#1	Hikers standing on rocky terrain.
+img2.jpg#2	Adventure group exploring the hillside.
+img2.jpg#3	Backpackers walking toward a mountain peak.
+img2.jpg#4	A trail of people seen on a hike.
+img3.jpg#0	A dog running in a field.
+img3.jpg#1	A brown dog playing with a stick.
+img3.jpg#2	A playful dog is jumping in the grass.
+img3.jpg#3	A dog chasing a ball on the lawn.
+img3.jpg#4	A happy pet enjoying the outdoors.
+img4.jpg#0	A woman standing in the city.
+img4.jpg#1	A person walking along a busy street.
+img4.jpg#2	A fashionable lady crossing the road.
+img4.jpg#3	A girl enjoying urban life in the evening.
+img4.jpg#4	A tourist exploring downtown.
+img5.jpg#0	Children playing soccer on a field.
+img5.jpg#1	A group of kids having fun outdoors.
+img5.jpg#2	Youngsters running behind a ball.
+img5.jpg#3	A sunny afternoon game in progress.
+img5.jpg#4	Boys enjoying football on grass.
+img6.jpg#0	Two men working on a laptop.
+img6.jpg#1	Colleagues discussing a project.
+img6.jpg#2	A business meeting in a cafe.
+img6.jpg#3	Coworkers sitting at a table with coffee.
+img6.jpg#4	A tech discussion between professionals.
+img7.jpg#0	A girl reading a book under a tree.
+img7.jpg#1	An outdoor study session in a park.
+img7.jpg#2	A young woman lost in a novel.
+img7.jpg#3	Reading time during golden hour.
+img7.jpg#4	A peaceful reader in nature.
+img8.jpg#0	A car driving down a rural road.
+img8.jpg#1	A vehicle traveling through scenic landscape.
+img8.jpg#2	A road trip under clear skies.
+img8.jpg#3	Driving through countryside views.
+img8.jpg#4	An adventure on wheels.
+img9.jpg#0	A man climbing a mountain cliff.
+img9.jpg#1	A daring climber scaling rocks.
+img9.jpg#2	Extreme sports on a high ledge.
+img9.jpg#3	An athlete challenging nature.
+img9.jpg#4	Rock climbing with gear and helmet.
+img10.jpg#0	A family having a picnic.
+img10.jpg#1	Outdoor lunch with loved ones.
+img10.jpg#2	Kids eating sandwiches under the sun.
+img10.jpg#3	Relaxing on a blanket in a park.
+img10.jpg#4	Baskets, juice, and happy smiles.
