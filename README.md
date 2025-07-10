@@ -97,7 +97,6 @@ sight-sense-image-captioning/
 Venkat Aditya Vellanki  
 Final Year B.Tech CSE  
 SRM Institute of Science and Technology  
-Email: venkatavellanki@gmail.com
 
 ---
 
