@@ -1,115 +1,78 @@
-# SIGHT SENSE: Automated Captioning of Visual Data
+# 🧠 SIGHT SENSE: Automated Captioning of Visual Data
 
-This is a major final-year academic project developed at SRM Institute of Science and Technology. The system uses a deep learning architecture combining VGG16, EfficientNetB7, and LSTM to generate accurate, context-aware captions for images. It was presented at ICIOT 2025 and accepted for publication in the AIP Conference Proceedings.
-
----
-
-## 🔍 Overview
-
-- Uses CNNs (VGG16, EfficientNetB7) for image feature extraction
-- Employs LSTM for sequential caption generation
-- Trained on the Flickr8k dataset (augmented to 40k)
-- Generates captions in natural language using attention mechanisms
-- Evaluated using BLEU score for linguistic similarity
+SIGHT SENSE is a deep learning-based system for generating meaningful, context-aware captions for images. Developed using CNN-LSTM architecture, the model integrates VGG16 and EfficientNetB7 for visual feature extraction and an LSTM with attention mechanism for sequence prediction.
 
 ---
 
-## 🧠 Technologies Used
+## 🚀 Features
+
+- 📷 Image preprocessing with VGG16 and EfficientNetB7
+- 🧠 Language generation using LSTM with attention
+- 🔁 Data augmentation for robust training
+- 📊 Evaluation via BLEU score
+- 🏅 Presented at ICIOT 2025 (Paper ID: 460)
+- 🧩 Journal publication accepted by AIP Conference Proceedings
+
+---
+
+## 📂 Dataset
+
+The system uses the **Flickr8k** dataset:
+- 8,000 images
+- 5 human-written captions per image
+- Augmented to 40,000+ images via rotation, shift, flip
+
+---
+
+## 🛠️ Tech Stack
 
 - Python
 - TensorFlow / Keras
-- OpenCV
-- NumPy, Pandas
-- NLTK
-- Matplotlib
-- gTTS (for optional voice output)
+- NumPy, OpenCV, NLTK, Matplotlib
+- Jupyter Notebook
 
 ---
 
-## 📁 Project Structure
+## 📦 Installation
+
+# Clone the repository
+```bash
+git clone https://github.com/venkatavellanki/sight-sense-image-captioning.git
+```
+
+# Navigate to the project folder
+```bash
+cd sight-sense-image-captioning
+```
+
+# Install dependencies
+```bash
+pip install -r requirements.txt
+```
+---
+
+## 📊 Evaluation
+
+Evaluation is done using the BLEU score, comparing model-generated captions with human-written references.
+
+---
+
+## 📁 Folder Structure
 
 sight-sense-image-captioning/
-├── README.md
-├── LICENSE
-├── .gitignore
-├── requirements.txt
-├── final_report/
-│ └── SIGHT_SENSE_Final_Report.md
-├── data/
-│ └── README.md
-├── notebook/
-│ └── model_training_and_testing.ipynb
-├── assets/
-│ ├── demo.png
-│ ├── conference_certificate.png
-│ └── training_validation.png
 ├── src/
-│ ├── preprocessing.py
-│ ├── feature_extraction.py
-│ ├── caption_generator.py
-│ ├── evaluate.py
-│ └── app.py
-
-
----
-
-## 🧪 Dataset
-
-- Base dataset: Flickr8k
-- Each image has 5 captions
-- Data augmentation techniques used:
-  - Horizontal flip
-  - Rotation (up to 10°)
-  - Width and height shift (10%)
-  - Nearest fill mode
-- Augmented to a total of 40,000 images
+├── data/
+├── models/
+├── notebooks/
+├── requirements.txt
+├── .gitignore
+└── README.md
 
 ---
 
-## 📊 Evaluation Metrics
+## 📌 Disclaimer
 
-- BLEU Score used to measure caption quality
-- Classification report included for caption tokens
-- Training and validation accuracy converged around 95%
-- Training and validation loss decreased smoothly to < 0.2
+This project was developed as part of my final year academic coursework in the 8th semester (2025).  
+While the repository is public for educational insight and viewing, **reproduction, distribution, or commercial use is strictly prohibited**.
 
----
-
-## 🏆 Achievements
-
-- Accepted and presented at ICIOT 2025 (SRM Institute of Science and Technology)
-- Paper ID: 460 | Plagiarism Score: 1%
-- Published in AIP Conference Proceedings (2025)
-- Received excellent feedback from review panel
-
----
-
-## 📌 Notes
-
-- This repository is made public for viewing and academic inspiration only
-- Reproduction, redistribution, or reuse of the code or content is strictly prohibited
-- Please refer to the LICENSE file for detailed restrictions
-
----
-
-## 👨‍💻 Developer
-
-Venkat Aditya Vellanki  
-Final Year B.Tech CSE  
-SRM Institute of Science and Technology  
-
----
-
----
-
-## 🔒 Disclaimer
-
-This project, **SIGHT SENSE: Automated Captioning of Visual Data**, was developed as part of the author's **final semester (8th Semester, 2025)** undergraduate curriculum at SRM Institute of Science and Technology.
-
-The repository is made public **solely for academic reference, learning, and inspiration purposes**.  
-**Commercial use, reproduction, redistribution, or derivative works based on the contents of this repository are strictly prohibited without explicit written permission.**
-
-All contents including code, models, results, and documentation are protected under **All Rights Reserved**.  
-Ownership remains with the original creator.
-
-© 2025 **Venkat Aditya Vellanki**. All Rights Reserved.
+© 2025 **Venkat Aditya Vellanki**. All rights reserved.
