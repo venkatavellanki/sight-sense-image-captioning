@@ -1,10 +1,11 @@
-{
-  "1000268201_693b08cb0e.jpg": [
-    "startseq a child in a pink dress is climbing up a set of stairs in an entry way endseq",
-    "startseq a girl going into a wooden building endseq",
-    "startseq a little girl climbing into a wooden playhouse endseq",
-    "startseq a little girl climbing the stairs to her playhouse endseq",
-    "startseq a young girl in a pink dress going into a wooden cabin endseq"
-  ],
-  ...
-}
+import json
+from collections import defaultdict
+
+caption_dict = defaultdict(list)
+with open("data/Flickr8k_text/captions.txt", "r") as f:
+    for line in f:
+        img, caption = line.strip().split('\t')
+        caption_dict[img].append(caption)
+
+with open("data/Flickr8k_text/captions_mapping.json", "w") as f:
+    json.dump(caption_dict, f, indent=2)
