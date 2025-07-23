@@ -1,0 +1,6 @@
+{
+  "1000268201_693b08cb0e.jpg": np.array([...]),
+  ...
+}
+with open('data/features.pkl', 'wb') as f:
+    pickle.dump(features_dict, f)
