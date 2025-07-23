@@ -1,6 +1,7 @@
-{
-  "word2idx": {"startseq": 1, "a": 2, "man": 3, ...},
-  "idx2word": {1: "startseq", 2: "a", 3: "man", ...}
+label_map = {
+    "wordtoix": tokenizer.word_index,
+    "ixtoword": {v: k for k, v in tokenizer.word_index.items()}
 }
-with open('data/label_map.pkl', 'wb') as f:
+
+with open("data/Flickr8k_text/label_map.pkl", "wb") as f:
     pickle.dump(label_map, f)
