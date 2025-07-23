@@ -1,0 +1,6 @@
+{
+  "word2idx": {"startseq": 1, "a": 2, "man": 3, ...},
+  "idx2word": {1: "startseq", 2: "a", 3: "man", ...}
+}
+with open('data/label_map.pkl', 'wb') as f:
+    pickle.dump(label_map, f)
