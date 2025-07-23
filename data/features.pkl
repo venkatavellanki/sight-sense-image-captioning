@@ -1,6 +1,26 @@
-{
-  "1000268201_693b08cb0e.jpg": np.array([...]),
-  ...
-}
-with open('data/features.pkl', 'wb') as f:
-    pickle.dump(features_dict, f)
+import os
+import pickle
+import numpy as np
+from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import Model
+
+model = VGG16()
+model = Model(inputs=model.inputs, outputs=model.layers[-2].output)
+
+def extract_features(directory):
+    features = {}
+    for fname in os.listdir(directory):
+        if fname.endswith('.jpg'):
+            img_path = os.path.join(directory, fname)
+            img = image.load_img(img_path, target_size=(224, 224))
+            img = image.img_to_array(img)
+            img = np.expand_dims(img, axis=0)
+            img = preprocess_input(img)
+            feature = model.predict(img, verbose=0)
+            features[fname] = feature.flatten()
+    return features
+
+features = extract_features("data/Flickr8k_images/")  # Make sure this exists
+with open("data/Flickr8k_text/features.pkl", "wb") as f:
+    pickle.dump(features, f)
