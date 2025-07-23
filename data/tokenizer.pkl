@@ -1,2 +1,15 @@
-with open('data/tokenizer.pkl', 'wb') as f:
+from tensorflow.keras.preprocessing.text import Tokenizer
+import pickle
+
+with open("data/Flickr8k_text/captions_mapping.json", "r") as f:
+    mapping = json.load(f)
+
+all_captions = []
+for captions in mapping.values():
+    all_captions.extend(['startseq ' + cap + ' endseq' for cap in captions])
+
+tokenizer = Tokenizer(num_words=10000, oov_token="<unk>")
+tokenizer.fit_on_texts(all_captions)
+
+with open("data/Flickr8k_text/tokenizer.pkl", "wb") as f:
     pickle.dump(tokenizer, f)
