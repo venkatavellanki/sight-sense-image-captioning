@@ -1,0 +1,2 @@
+with open('data/tokenizer.pkl', 'wb') as f:
+    pickle.dump(tokenizer, f)
