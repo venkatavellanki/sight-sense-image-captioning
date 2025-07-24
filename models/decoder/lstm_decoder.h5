@@ -1,0 +1,1 @@
+decoder_model.save('models/decoder/lstm_decoder.h5')
