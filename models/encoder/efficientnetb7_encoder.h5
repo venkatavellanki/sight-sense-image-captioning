@@ -1,0 +1,1 @@
+efficientnet_model.save('models/encoder/efficientnetb7_encoder.h5')
