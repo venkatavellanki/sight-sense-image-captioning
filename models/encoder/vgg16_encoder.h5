@@ -1,0 +1,1 @@
+vgg_model.save('models/encoder/vgg16_encoder.h5')
